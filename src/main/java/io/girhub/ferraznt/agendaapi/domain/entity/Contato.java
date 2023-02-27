@@ -18,10 +18,10 @@ public class Contato {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_id_contato")
     private Integer id;
 
-    @Column(name = "nome", nullable = false)
+    @Column(name = "nome", nullable = false, length = 150)
     private String nome;
 
-    @Column(name = "email", nullable = false)
+    @Column(name = "email", nullable = false, length = 150)
     private String email;
 
     @Column
